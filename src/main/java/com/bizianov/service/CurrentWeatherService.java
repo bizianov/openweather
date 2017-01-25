@@ -39,4 +39,16 @@ public class CurrentWeatherService implements WeatherService {
             }
         }
     }
+
+    public void setWeatherProvider(WeatherProvider weatherProvider) {
+        this.weatherProvider = weatherProvider;
+    }
+
+    public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
+
+    public void setTemperatureParser(TemperatureParser temperatureParser) {
+        this.temperatureParser = temperatureParser;
+    }
 }
